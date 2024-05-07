@@ -74,7 +74,8 @@ void PacketBuffer::StartWriting(const TMap<FString, uint32> &ObjectToColor, cons
     Entry->B = ObjectColor.B;
 
     // Convert name to ANSI and copy it to the packet (no trailing '\0', length is indirectly given by the entry size)
-    const char *Name = TCHAR_TO_ANSI(*Elem.Key);
+    auto convertedElemKey = StringCast<ANSICHAR>(*Elem.Key);
+    const char *Name =convertedElemKey.Get();
     memcpy(&Entry->FirstChar, Name, NameSize);
 
     It += ElemSize;
