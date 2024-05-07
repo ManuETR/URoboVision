@@ -11,6 +11,7 @@
 #include "Runtime/Engine/Public/Rendering/SkeletalMeshRenderData.h"
 #include "UObject/ConstructorHelpers.h"
 #include "EngineUtils.h"
+#include "SkeletalMeshSceneProxy.h"
 
 class FSkeletalSegmentationSceneProxy : public FSkeletalMeshSceneProxy
 {

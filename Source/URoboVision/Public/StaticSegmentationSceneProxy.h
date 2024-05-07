@@ -10,7 +10,7 @@
 #include "Runtime/Engine/Public/Rendering/SkeletalMeshRenderData.h"
 #include "UObject/ConstructorHelpers.h"
 #include "EngineUtils.h"
-
+#include "StaticMeshSceneProxy.h"
 
 
 class FStaticSegmentationSceneProxy : public FStaticMeshSceneProxy
